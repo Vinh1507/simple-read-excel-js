@@ -35,11 +35,12 @@
 [Title] ${question.Title} [/Title]
 [Text] ${question.Text} [/Text]
 [Description] ${question.Description} [/Description] 
-[/QUESTION]`
+[/QUESTION]
+`
                 }
                 result = `
 [ELSA SPEAK]
-${result}
+${result.trim()}
 [/ELSA SPEAK]
                 `
                 document.getElementById('result').textContent = result;
